@@ -10,17 +10,17 @@ new App({
 		
 		// What do you associate with the term 'CI/CD'?
 		associations: [
-			'Gitlab, pipeline failed, works on my machine!'
+			'Gitlab', 'pipeline failed', 'works on my machine!'
 		],
 		// Which CI/CD tools do you use in your project?
 		tools: 'Jenkins',
 		// What do you want to learn in this workshop? 
 		expectations: [
-			'More Jenkins, general concepts, bit about infrastructure as code maybe?'
+			'More Jenkins', 'general concepts'
 		],
 		// What do you like to do when you're not coding?
 		hobbies: [
-			'kitesurefing', 'piano', 'bouldering'
+			'kitesurfing', 'piano', 'bouldering'
 		]
 	}
 });
