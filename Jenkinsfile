@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/Hagobert/ciCdPlayground'
+                git branch: 'main',
+                    url: 'https://github.com/Hagobert/ciCdPlayground'
                 sh 'yarn'
                 sh 'yarn build'
             }
