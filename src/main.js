@@ -10,7 +10,7 @@ new App({
 		
 		// What do you associate with the term 'CI/CD'?
 		associations: [
-			'Gitlab', 'pipeline failed', 'works on my machine!'
+			'Gitlab', 'pipeline failed', 'Works on my machine!!'
 		],
 		// Which CI/CD tools do you use in your project?
 		tools: 'Jenkins',
