@@ -8,21 +8,28 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git checkout 'https://github.com/Hagobert/ciCdPlayground'
-                yarn
-                yarn build
+                step('Build'){
+                    git checkout 'https://github.com/Hagobert/ciCdPlayground'
+                    yarn
+                    yarn build
+                }
             }
         }
         stage('UnitTest'){
             steps{
-                yarn test
+                step('UnitTest'){
+                    yarn test
+                }
+
             }
         }
-        
+
         stage('IntegrationTest'){
             steps{
-                yarn build
-                yarn test:e2e
+                step('IntegrationTest'){
+                    yarn build
+                    yarn test:e2e
+                }
             }
         }
     }
